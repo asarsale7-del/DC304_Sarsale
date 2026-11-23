@@ -3,7 +3,7 @@ export default function AboutPage() {
     <main className="p-8">
       <h1 className="text-3xl font-bold">About</h1>
       <p className="mt-2">
-        I am Armand Sarsale. I am learning to build websites with Next.js.
+        I am Armand Sarsale. I am 21 years old.
       </p>
     </main>
   );
