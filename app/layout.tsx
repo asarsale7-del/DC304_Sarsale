@@ -25,11 +25,28 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
-        </nav>
+        <header className="border-b border-white/10">
+          <nav
+            aria-label="Main navigation"
+            className="mx-auto flex w-full max-w-5xl gap-8 px-6 py-5 text-sm font-medium text-zinc-300 sm:px-8"
+          >
+            <Link className="transition-colors hover:text-emerald-400" href="/">
+              Home
+            </Link>
+            <Link
+              className="transition-colors hover:text-emerald-400"
+              href="/about"
+            >
+              About
+            </Link>
+            <Link
+              className="transition-colors hover:text-emerald-400"
+              href="/projects"
+            >
+              Projects
+            </Link>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
